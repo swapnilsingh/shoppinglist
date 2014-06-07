@@ -1,0 +1,19 @@
+# Extending from the default server configuration
+server:
+  applicationConnectors:
+    - type: http
+      port: 8080
+# Logging Configurations
+logging:
+  level: INFO
+  appenders:
+    - type: console
+      threshold: ALL
+      timeZone: UTC
+      target: stdout
+# Database Configuration
+databaseConfig:
+  driver: driver:com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/Test
+  userName: root
+  password: root
